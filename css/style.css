@@ -1,0 +1,394 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Navigation Bar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0b3d91;
+    padding: 20px 30px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+/* Home Section */
+.home{
+    min-height:100vh;
+    max-width:100%;
+    background:url("../images/transit7.jpg") center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+/*couche sombre pour que le texte reste visible*/
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.home-content{
+    position:relative;
+    max-width:800px;
+    padding:20px;
+}
+
+.home-content h1{
+    font-size:42px;
+    color:white;
+    margin-bottom:20px;
+}
+
+.home-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#0b3d91;
+    color:white;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#062c6b;
+    transform:scale(1.05);
+}
+
+/* Services Section */
+.services{
+    padding:100px 80px;
+    background:#eef2f7;
+    text-align:center;
+}
+
+.section-title{
+    font-size:36px;
+    margin-bottom:60px;
+    color:#0b3d91;
+}
+
+.services-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:35px;
+}
+
+.service-card{
+    background:linear-gradient(145deg, #ffffff, #f1f4f9);
+    padding:40px 30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.service-card h3{
+    margin-bottom:15px;
+    font-size: 22px;
+    color:#0b3d91;
+}
+
+.service-card p{
+    font-size:16px;
+    color:#555;
+    line-height:1.6;
+}
+
+/*section statistics*/
+.stats{
+    background:#0b3d91;
+    padding:100px 80px;
+    color:white;
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:40px;
+    text-align:center;
+}
+
+.stat-box h3{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:18px;
+}
+
+/*section pourquoi nous choisir*/
+.why-us{
+    padding:100px 10%;
+    background:white;
+}
+
+.why-container{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.why-text{
+    flex:1;
+}
+
+.why-text h2{
+    font-size:34px;
+    color:#0b3d91;
+    margin-bottom:20px;
+}
+
+.why-text p{
+    margin-bottom:20px;
+    font-size:17px;
+    color:#555;
+}
+
+.why-text ul{
+    list-style:none;
+}
+
+.why-text ul li{
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+.why-image{
+    flex:1;
+}
+
+.why-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+.contact{
+    padding:100px 10%;
+    background:#f4f6f9;
+    text-align:center;
+}
+
+.contact-container{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border:1px solid #0b3d91;
+}
+
+.contact-form button{
+    border:none;
+    cursor:pointer;
+}
+
+
+/* Footer */
+.footer{
+    background:#0b3d91;
+    color:white;
+    padding:60px 10% 20px 10%;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:40px;
+    margin-bottom:40px;
+}
+
+.footer-box h3,
+.footer-box h4{
+    margin-bottom:15px;
+}
+
+.footer-box p{
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+.footer-box-nav
+{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.footer-box-nav a {
+    color: white;
+    text-decoration: none;
+   
+}
+
+.footer-box-nav a:hover{
+    text-decoration:underline;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.3);
+    padding-top:15px;
+    font-size:14px;
+}
+
+/* Animations */
+section{
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/* Responsive mobile */
+@media (max-width:768px){
+
+     .home{
+        background:url("../images/transit1.jpg") center center;
+        min-height:80vh;
+    }
+
+    .btn{
+        
+
+        padding:14px 30px;
+        text-decoration:none;
+        border-radius:5px;
+        font-weight:bold;
+    }
+    nav{
+        padding:10px 15px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    nav ul{
+        margin-top:15px;
+        flex-direction:column;
+        gap:10px;
+    }
+  
+
+    .home-content h1{
+        font-size:28px;
+    }
+
+    .home-content p{
+        font-size:16px;
+    }
+
+    .services,
+    .why-us,
+    .contact,
+    .stats{
+        padding:60px 20px;
+    }
+
+
+     .why-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .why-image img{
+        width:100%;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+        display:block;
+    }
+
+    .footer-box-nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: center;
+        color: white;
+    }
+
+
+}
