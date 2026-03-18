@@ -11,7 +11,11 @@
     <header>
         <nav>
             <div class="logo"> <h2>Yacine Transit</h2> </div> 
-                  
+            
+             <div class="menu-toggle">
+                ☰
+            </div>
+
             <div class="nav-links">
                 <ul>
                     <li><a href="#home">Accueil</a></li>
@@ -189,6 +193,15 @@
     </div>
 
 </footer>
+
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+</script>
 
 </body>
 </html>
